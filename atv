@@ -1,0 +1,58 @@
+a-using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("digite um numero");
+        int n = int.Parse(Console.ReadLine());
+        Console.WriteLine(n);
+    }
+
+}
+
+
+b-using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("digite um numero");
+        double n = double.Parse(Console.ReadLine());
+        Console.WriteLine(n);
+    }
+
+}
+
+
+c-using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("digite um numero");
+        float n = float.Parse(Console.ReadLine());
+        Console.WriteLine(n);
+    }
+
+}
+
+
+d-using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Você concorda com os termos? (sim/não): ");
+        string resposta = Console.ReadLine().Trim().ToLower();
+
+        bool opcaoBool = (resposta == "sim");
+
+        Console.WriteLine($"\nO valor armazenado na variável bool é: {opcaoBool}");
+    }
+}
+
+e-
