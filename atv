@@ -55,4 +55,114 @@ class Program
     }
 }
 
-e-
+e-using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("digite uma caractere");
+        char n = Console.ReadKey().KeyChar;
+
+        Console.WriteLine(n);
+    }
+        
+
+}
+
+
+f-using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("digite um numero decimal");
+        decimal n = decimal.Parse(Console.ReadLine());
+
+        Console.WriteLine(n);
+    }
+        
+
+}
+
+
+g-using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("digite seu nome");
+        string nome = Console.ReadLine();
+        Console.WriteLine("Digite sua idade");
+        int n = int.Parse(Console.ReadLine());
+        Console.WriteLine(nome);
+        Console.WriteLine(n);
+    }
+        
+
+}
+
+
+h-using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("DIGITE O PREÇO: ");
+        double preco = double.Parse(Console.ReadLine());
+
+        Console.Write("DIGITE A PORCENTAGEM DO DESCONTO: ");
+        double desc = double.Parse(Console.ReadLine());
+
+        
+        double resultdesc = preco * (desc / 100);
+        double precoFinal = preco - resultdesc;
+
+    }
+   
+}
+
+
+i-using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("digite uma palavra");
+        string n = Console.ReadLine();
+
+        int s = n.Length;
+        Console.WriteLine(s);
+    }
+   
+}
+
+
+j-using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Digite a rua: ");
+        string rua = Console.ReadLine();
+
+        Console.Write("Digite o número da casa: ");
+        string numero = Console.ReadLine();
+
+        Console.Write("Digite o bairro: ");
+        string bairro = Console.ReadLine();
+
+        Console.Write("Digite a cidade: ");
+        string cidade = Console.ReadLine();
+
+        Console.Write("Digite o estado (UF): ");
+        string estado = Console.ReadLine();
+
+        Console.WriteLine($"\nEndereço Completo: Rua {rua}, nº {numero}, Bairro {bairro}, {cidade} - {estado}.");
+    }
+}
